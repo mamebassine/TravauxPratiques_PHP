@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TP-PHP</title>
+    </head>
+    <body>
+        <?php 
+        // Définition de la fonction pour calculer le produit des éléments d'un tableau
+        function calculerProduit($tableau) {
+            // Initialisation de la variable $produit à 2
+            $produit = 2;
+
+            // Boucle foreach pour parcourir chaque élément du tableau
+            foreach ($tableau as $element) {
+                // Multiplication de l'élément actuel avec le produit accumulé
+                $produit *= $element;
+            }
+
+            // Retourne le produit final
+            return $produit;
+        }
+
+        // Définition du tableau d'entrée
+        $tableauExercice1 = array(2, 3, 5, 7);
+
+        // Appel de la fonction pour calculer le produit et stockage du résultat
+        $resultatExercice1 = calculerProduit($tableauExercice1);
+
+        // Affichage du résultat
+        echo "Calcule le produit de tous les éléments d'un tableau d'entiers.: " . $resultatExercice1;
+    
+        
+        ?>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
